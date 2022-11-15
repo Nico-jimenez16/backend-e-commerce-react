@@ -1,8 +1,0 @@
-npm init -y
-npm i typescript -D
-npm i express -E
-npm run tsc -- --init
-npm i @types/express -D
-npm i ts-node-dev -D
-
-

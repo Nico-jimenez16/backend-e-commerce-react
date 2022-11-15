@@ -7,7 +7,7 @@ import products from './routes/products'
 const app = express()
 app.use(express.json())
 
-const PORT = 3000
+const PORT = process.env.PORT || 8080
 
 app.use('/api/users' , users)
 app.use('/api/products' , products)
