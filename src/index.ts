@@ -7,7 +7,7 @@ import products from './routes/products'
 const app = express()
 app.use(express.json())
 
-const PORT = process.env.PORT || 8080
+const PORT = 8080
 
 app.get('/',(_req , res ) => {
     res.send('La pagina de Inicio')
