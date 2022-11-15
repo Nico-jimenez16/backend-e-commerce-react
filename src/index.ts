@@ -9,6 +9,10 @@ app.use(express.json())
 
 const PORT = process.env.PORT || 8080
 
+app.get('/',(_req , res ) => {
+    res.send('La pagina de Inicio')
+})
+
 app.use('/api/users' , users)
 app.use('/api/products' , products)
 
