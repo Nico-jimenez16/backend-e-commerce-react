@@ -1,11 +1,14 @@
-import express from 'express'
+import express from 'express';
+let cors = require("cors");
 
 // ! importamos rutas
 import users from './routes/users'
 import products from './routes/products'
 
+
 const app = express()
 app.use(express.json())
+app.use(cors())
 
 const PORT = 8080
 
